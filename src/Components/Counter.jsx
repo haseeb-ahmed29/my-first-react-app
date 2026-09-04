@@ -3,7 +3,8 @@ import {useState} from "react";
 
 function Counter (){
 
-    const [count,setCount]= usState (0);
+    const [count, setCount] = useState(0);
+
      function handelAdd(){
         setCount (count+1)
      }

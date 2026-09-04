@@ -14,9 +14,24 @@ function NameInput(){
         setName(event.target.value);
     }
 
-    return(
-        <div>
-            <h2>Type your Name</h2>
-        </div>
-    )
+ return (
+  <div>
+    <h2>Type your Name</h2>
+
+    {/* The value of the input is controlled by our state */}
+    {/* onChange every time the user types a character */}
+    <input
+      type="text"
+      value={name}
+      onChange={handleChange}
+      placeholder="Type your name here"
+    />
+
+    {/* Only show the greeting if the user has typed something */}
+    {/* name.length > 0 is true when the string is not empty */}
+    {name.length > 0 && <p>{name}! Welcome to React</p>}
+  </div>
+);
 }
+
+export default NameInput;

@@ -185,18 +185,34 @@
 // export default App;
 
 
-import Counter from "./Components/Counter";
+// import Counter from "./Components/Counter";
 
-function App(){
+// function App(){
 
-  return(
+//   return(
+//     <div>
+//       <h1>Event Hnadling Demo</h1>
+//       <Counter/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+import NameInput from "./Components/NameInput";
+
+function App() {
+  return (
     <div>
-      <h1>Event Hnadling Demo</h1>
-      <Counter/>
+      <h1>React Event Handling Demo</h1>
+
+      <NameInput />
     </div>
-  )
+  );
 }
 
 export default App;
+
 
 
