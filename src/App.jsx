@@ -210,7 +210,7 @@ function App() {
       <NameInput />
     </div>
   );
-}
+};
 
 export default App;
 
