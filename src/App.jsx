@@ -200,19 +200,34 @@
 // export default App;
 
 
-import NameInput from "./Components/NameInput";
+// import NameInput from "./Components/NameInput";
 
+// function App() {
+//   return (
+//     <div>
+//       <h1>React Event Handling Demo</h1>
+
+//       <NameInput />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+import UserForm from "./Components/UserForm";
+import NameInput from "./Components/NameInput";
+import Counter from "./Components/Counter";
 function App() {
   return (
     <div>
-      <h1>React Event Handling Demo</h1>
-
+      <h1>React User Form</h1>
+      <UserForm/>
       <NameInput />
+      <Counter/>
     </div>
   );
-};
 
+}
 export default App;
-
 
 
