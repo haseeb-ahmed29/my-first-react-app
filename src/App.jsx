@@ -4,6 +4,8 @@
 // import heroImg from './assets/hero.png'
 // import './App.css'
 
+import { BrowserRouter, Routes } from "react-router-dom";
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -214,20 +216,47 @@
 
 // export default App;
 
-import UserForm from "./Components/UserForm";
-import NameInput from "./Components/NameInput";
-import Counter from "./Components/Counter";
-function App() {
-  return (
-    <div>
-      <h1>React User Form</h1>
-      <UserForm/>
-      <NameInput />
-      <Counter/>
-    </div>
-  );
+// import UserForm from "./Components/UserForm";
+// import NameInput from "./Components/NameInput";
+// import Counter from "./Components/Counter";
+// import HoverMessage from "./Components/HoverMessage";
+// import KeyPress from "./Components/KeyPress"
 
+// function App() {
+//   return (
+//     <div>
+//       <h1>React User Form</h1>
+//       <UserForm/>
+//       <NameInput />
+//       <HoverMessage/>
+//       <keyPress/>
+//       <Counter/>
+//     </div>
+//   );
+
+// }
+// export default App;
+
+import { BrowserRouter,Route,Routes } from "react-router-dom";
+import Navbar from "./Components/navbar";
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
+
+
+
+function App (){
+  return(
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>    
+      <Route path='/About' element={<About/>}/>   
+      <Route path='/Contact' element={<Contact/>}/>   
+    </Routes>
+    </BrowserRouter>
+  )
 }
+
 export default App;
 
 
